@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>City</title>
+</head>
+<body>
+
+  {% for city in cities %}
+  <ul>
+    <li><a href="/weather/{{ city.city }}">{{ city.city }}</a></li>
+  </ul>
+
+{% endfor %}
+</body>
+</html>
